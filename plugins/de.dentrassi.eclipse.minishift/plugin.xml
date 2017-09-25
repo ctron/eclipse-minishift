@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.core.variables.dynamicVariables">
+      <variable
+            description="IP of the minishift instance"
+            name="minishift_ip"
+            resolver="de.dentrassi.eclipse.minishift.IpAddressResolver"
+            supportsArgument="true">
+      </variable>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="de.dentrassi.eclipse.minishift.preferences.PreferencePage"
+            id="de.dentrassi.eclipse.minishift.preferences.PreferencePage"
+            name="Minishift">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="de.dentrassi.eclipse.minishift.preferences.PreferenceInitializer">
+      </initializer>
+   </extension>
+
+</plugin>

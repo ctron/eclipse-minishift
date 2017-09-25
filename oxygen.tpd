@@ -1,0 +1,13 @@
+target "Oxygen"
+
+with source
+
+location "http://download.eclipse.org/releases/oxygen" {
+	org.eclipse.platform.feature.group
+	org.apache.commons.exec
+
+	org.eclipse.equinox.p2.sdk.feature.group
+	org.eclipse.emf.sdk.feature.group
+	org.eclipse.sdk.feature.group
+	org.eclipse.e4.rcp.feature.group
+}

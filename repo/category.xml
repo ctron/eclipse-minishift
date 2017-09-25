@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<site>
+   <feature id="de.dentrassi.eclipse.minishift" version="0.0.0">
+      <category name="minishift"/>
+   </feature>
+   <category-def name="minishift" label="Minishift Support">
+      <description>
+         Support for Minishift
+      </description>
+   </category-def>
+</site>

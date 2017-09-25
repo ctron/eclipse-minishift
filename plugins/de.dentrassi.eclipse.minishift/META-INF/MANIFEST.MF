@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-SymbolicName: de.dentrassi.eclipse.minishift;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.eclipse.core.variables;bundle-version="[3.4.0,4.0.0)",
+ org.eclipse.core.runtime,
+ org.eclipse.ui
+Import-Package: org.apache.commons.exec;version="[1.1.0,2.0.0)",
+ org.apache.commons.exec.environment;version="[1.1.0,2.0.0)",
+ org.eclipse.core.runtime;version="[3.5.0,4.0.0)",
+ org.osgi.framework;version="[1.8.0,2.0.0)"
+Bundle-ActivationPolicy: lazy
+Bundle-Activator: de.dentrassi.eclipse.minishift.Activator
