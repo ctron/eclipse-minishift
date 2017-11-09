@@ -9,6 +9,12 @@
             resolver="de.dentrassi.eclipse.minishift.IpAddressResolver"
             supportsArgument="true">
       </variable>
+      <variable
+            description="URL of a service running inside Minishift"
+            name="minishift_service"
+            resolver="de.dentrassi.eclipse.minishift.ServiceUrlResolver"
+            supportsArgument="true">
+      </variable>
    </extension>
    <extension
          point="org.eclipse.ui.preferencePages">
