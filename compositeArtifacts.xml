@@ -3,10 +3,10 @@
 <repository name='Minishift support'
     type='org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository' version='1.0.0'>
   <properties size='1'>
-    <property name='p2.timestamp' value='1510230670000'/>
+    <property name='p2.timestamp' value='1510231267000'/>
   </properties>
   <children size='2'>
     <child location='1.0.0.201709251403'/>
-    <child location='1.1.0.201711091218'/>
+    <child location='1.1.0.201711091239'/>
   </children>
 </repository>
