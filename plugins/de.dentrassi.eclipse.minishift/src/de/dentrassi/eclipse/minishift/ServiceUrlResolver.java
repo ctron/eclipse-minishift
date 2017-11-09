@@ -32,7 +32,7 @@ public class ServiceUrlResolver extends AbstractMinishiftResolver {
 
 		try {
 			if (argument == null || argument.isEmpty()) {
-				errorResult("Missing argument. You must pass the namespace and service name as argument to the variable: e.g. http://<ns>.<service>");
+				errorResult("Missing argument. You must pass the namespace and service name as argument to the variable: e.g. http://<service>.<namespace>");
 			}
 
 			boolean https = false;
@@ -49,7 +49,7 @@ public class ServiceUrlResolver extends AbstractMinishiftResolver {
 
 			final String [] toks = service.split("\\.");
 			if ( toks.length != 2 ) {
-				errorResult("Wrong argument. You must pass the namespace and service name as argument to the variable: e.g. http://<ns>.<service>");
+				errorResult("Wrong argument. You must pass the namespace and service name as argument to the variable: e.g. http://<service>.<namespace>");
 			}
 
 			final List<String> arguments = new ArrayList<>();
@@ -59,9 +59,9 @@ public class ServiceUrlResolver extends AbstractMinishiftResolver {
 				arguments.add("--https");
 			}
 			arguments.add("-n");
-			arguments.add(toks[0]);
-			arguments.add("-u");
 			arguments.add(toks[1]);
+			arguments.add("-u");
+			arguments.add(toks[0]);
 
 			final String result = execute(arguments);
 

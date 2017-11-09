@@ -31,13 +31,13 @@ If minishift is not running then the lookup will fail.
 
 To get the URL of a service use:
 
-    ${minishift_service:http://service-name}
+    ${minishift_service:http://service-name.namespace}
 
 This will retrieve the service's URL: e.g. `http://hono-adapter-rest-vertx-hono.192.168.42.43.nip.io`
 
 It is also possible to retrieve the HTTPS based URL:
 
-    ${minishift_service:https://service-name}
+    ${minishift_service:https://service-name.namespace}
 
 The service name must be prefixed with `http://` or `https://`.
 
