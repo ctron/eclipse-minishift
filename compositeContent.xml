@@ -3,9 +3,10 @@
 <repository name='Minishift support'
     type='org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository' version='1.0.0'>
   <properties size='1'>
-    <property name='p2.timestamp' value='1506349071000'/>
+    <property name='p2.timestamp' value='1510230670000'/>
   </properties>
-  <children size='1'>
+  <children size='2'>
     <child location='1.0.0.201709251403'/>
+    <child location='1.1.0.201711091218'/>
   </children>
 </repository>
